@@ -32,3 +32,14 @@
   top: -4px;
   font-size: 10px;
 }
+
+.nav__new {
+  width: 4px;
+  height: 4px;
+  background-color: tomato;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  right: -4px;
+}
