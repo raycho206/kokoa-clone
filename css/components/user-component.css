@@ -11,6 +11,9 @@
 .user-component__column:last-child {
   font-size: 10px;
   color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .user-component__avatar {
@@ -41,6 +44,10 @@
 
 .user-component__subtitle {
   margin-top: 4px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.4);
   font-size: 12px;
+}
+
+.user-component__time {
+  margin-bottom: 6px;
 }
