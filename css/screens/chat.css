@@ -119,8 +119,8 @@
 }
 
 .reply:focus-within input {
-  width: 90vw;
-  transform: translateX(-4%) translateY(-42px);
+  width: 96vw;
+  transform: translateX(-10%) translateY(-42px);
 }
 
 .reply .reply__column:first-child {
@@ -130,7 +130,6 @@
 .reply .reply__column:last-child {
   width: 90%;
   position: relative;
-  padding-right: 20px;
 }
 
 .reply input {
@@ -138,6 +137,7 @@
   width: 100%;
   border: var(--main-border);
   border-radius: 16px;
+  box-sizing: border-box;
   transition: all 0.3s ease-in-out;
 }
 
