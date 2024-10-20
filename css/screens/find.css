@@ -25,9 +25,6 @@
   font-size: 12px;
 }
 
-.open-chat__header span {
-}
-
 .open-post {
   display: flex;
   justify-content: space-between;
@@ -101,4 +98,24 @@
 
 .open-post__heart-count span {
   margin-left: 2px;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
 }
