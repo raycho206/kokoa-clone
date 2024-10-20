@@ -4,9 +4,7 @@
 #chat-screen .status-bar__container,
 #chat-screen .alt-header__container {
   background-color: #abc1d1;
-}
-
-#chat-screen .alt-header {
+  z-index: 1;
 }
 
 .main-chat {
@@ -77,4 +75,66 @@
 
 .message-row--own .message__info {
   flex-direction: row-reverse;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 12px;
+  box-sizing: border-box;
+}
+
+.reply .reply__column:first-child {
+  width: 10%;
+}
+
+.reply .reply__column:last-child {
+  width: 90%;
+  position: relative;
+  padding-right: 20px;
+}
+
+.reply input {
+  padding: 8px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 16px;
+}
+
+.reply i {
+  opacity: 0.5;
+}
+
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: 6px;
+  top: 4px;
+}
+
+.reply__column:last-child > i {
+  right: 44px;
+  top: 16px;
+}
+
+.reply__column button {
+  background-color: var(--yellow);
+  border: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+}
+
+.reply__column button i {
+  opacity: 1;
 }
