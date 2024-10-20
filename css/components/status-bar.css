@@ -1,5 +1,6 @@
 .status-bar {
   height: 24px;
+  position: relative;
 }
 
 .status-bar__container {
