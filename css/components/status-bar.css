@@ -1,9 +1,9 @@
 .status-bar {
   height: 24px;
-  position: relative;
 }
 
 .status-bar__container {
+  height: 24px;
   display: flex;
   justify-content: center;
   padding: 4px;
